@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>visXY Example</title>
+
+<!-- This is the relevant script -->
+<script src="visXY.js"></script>
+</head>
+<body>
+
+<!-- canvas with ID "PlottingSpace" is needed -->
+<canvas id="PlottingSpace" width="500" height="500" style="border:1px dotted #999999;"></canvas> 
+
+<script>
+	//Test data
+	DataX = [3, 5, 12, 15, 19, 80, 150, 240, 250, 273, 15, 23, 51, 104, 200, 60, 174 ,  104 ,  174 ,  98 , 138 ,  143 ,  154 ,  124 , 100 , 166, 183 , 174 , 80 , 112 , 173 , 118 , 109 , 101 , 152 , 189 ,  80 , 92 , 116 , 172 , 126 , 112 , 117 , 126 , 90 , 12];
+	DataY = [34, 52, 30, 90, 220, 80, 150, 240, 250, 273, 205, 24, 12, 43, 76, 103, 189,149,121,102,134,225,118,169,127,107,221,173,95,198,194,224,128,197,256,140,123,117,150,121,98,91,50,182,135,194];
+	
+	visXY(DataX, DataY, "points", "visXY Example", 2, "xy", 8);
+</script>
+</body>
+</html>
